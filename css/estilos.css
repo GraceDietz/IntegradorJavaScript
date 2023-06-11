@@ -1,0 +1,480 @@
+/*este es el ultimo css que esta revisado ok*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&family=Nunito:wght@200;300;400;500;700&display=swap');
+
+/*como colocar una fuente descargada*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*estilo de fonts para todo el boby*/
+body {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+/*estilo de font para todos los h*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', cursive;
+}
+
+/*tamaño para el header  padre de cajaheader y de la section  laConfe*/
+.header {
+  width: 100%;
+  height: 100%;
+
+
+}
+
+/* Primer hijo de header --> CajaHeader es el padre de contenedorLogo img a  h2 y menu de navegacion*/
+.cajaHeader {
+
+  position: sticky;
+  /*para que quede fijado en la parte superior de la pantalla*/
+  top: 0;
+  z-index: 99;
+  /*
+  width: 100%;
+  /*su ancho */
+  height: 15%;
+  /*su alto*/
+ background-color: #212529;
+  
+
+}
+.imagenHeader{
+  width: 150px;
+  object-fit:cover;
+  margin-left: 5rem;
+  
+}
+
+
+
+
+/*estilado para las <a>*/
+.linkNav {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  margin-right: 1rem;
+
+}
+
+/* a verde del menu de navegacion last-child*/
+.linkNavVerde {
+  font-size: 14px;
+  text-decoration: none;
+  color: #27a844;
+}
+
+
+/* Segundo hijo del header--> section laConfe con h1 parrafo y dos botones (quiero ser orador) y comprar tickets*/
+.laConfe {
+  height: 90vh;
+  /*para oscurecer la imagen de fondo utilizamos linear-gradient*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/img/ba1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+.laConferencia{
+ 
+ height: 90vh;
+ padding-top:130px;
+}
+
+/*estilado boton queres ser orador */
+.btnOrador {
+  border: 1px solid white;
+  color: white;
+
+}
+
+/*estilado boton comprar ticket*/
+.btnTickets {
+  background-color: #27a844;
+  border: 1px solid #27a844;;
+  color: white;
+ 
+  
+}
+
+/* contenedor padre Oradores Secccion de Oradores con las tres cards
+    hijos-->  h2 y contenedorGrid  */
+.Oradores {
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Oradores h2 {
+  text-align: center;
+}
+
+.h2conoce {
+  font-size: 14px;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+
+}
+
+.h2oradores {
+
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+
+/* estilado para contenedor de las 3 cards */
+.contenedorGrid {
+
+  height: auto;
+  margin: 0 auto;
+  gap: 10px;
+  padding-bottom: 2rem;
+
+}
+
+/*estilado para contenedor de de cada card , padre de img h4 h3  java reac negocios startup*/
+.gridCard {
+  width: 300px;
+
+}
+
+.gridCard img {
+
+
+  width: 300px;
+  height: 300px;
+
+  object-fit: cover;
+
+}
+
+
+
+.gridCard h5 {
+  font-weight: 500;
+  font-size: 15px;
+  padding-top: 0.5rem;
+
+
+}
+
+.gridCard p {
+  /*
+  margin-top:1rem;*/
+  color: grey;
+  font-size: 12px;
+
+
+}
+
+/*estilado card titulo java*/
+
+
+
+/*ESTILADO CSS BOOSTRAP HECHO EN CLASE*/
+/*columna izquierda imagen */
+
+.lugarYfecha {
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 1rem;
+}
+
+.columnaIzquierda {
+  width: 70%;
+  height: 80vh;
+  background-color: rgb(55, 58, 64);
+}
+
+.carousel-item img {
+  height: 80vh;
+  object-fit: cover;
+}
+
+/*columna derecha titulo parrafo y boton conoce mas*/
+.columnaDerecha {
+  width:30% ;
+  height: 80vh;
+  background-color: rgb(55, 58, 64);
+  color: white;
+  font-size: 14px;
+
+}
+
+.btnConoceMas {
+  border: 0.5px solid white;
+  color: white;
+  
+
+}
+
+/*-------------------------Estilado seccion formulario de inscripcion para ser Orador*/
+.formulario1 {
+  width: 50%;
+  height: auto;
+
+}
+
+.formulario1 h2 {
+  /*estilo  para el titulo h2*/
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.formPrf {
+  /*clase del titulo*/
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 12px;
+}
+
+.dots {
+  /*clase para los puntos */
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.textArea {
+  height: 6rem;
+
+}
+
+.pCharla {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: left;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btnVerde {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #27a844; 
+  border: 1px solid #27a844;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+
+}
+
+
+/*-----------------Estilados para footer ------------*************/
+.navFooter {
+
+  background: linear-gradient(to right, #1d3947, #1d4962, #1e5372);
+  width: 100%;
+  padding: 1rem;
+
+}
+
+.navFooter ul {
+  width: 60%;
+}
+
+.linkNavFooter {
+  text-decoration: none;
+  color: white;
+   font-size: 12px;
+
+}
+
+
+/*----------------------------FIN CSS PARA DESKTOP-----------------------------*/
+
+/*------------------------------- Estilado pantallas menor a 319px NO MUESTRA NADA*/
+@media screen and (max-width:319px) {
+  * {
+    display: none;
+  }
+}
+
+/*--------------- ESTILADOS PARA CELULARES  hasta 768px---------------------*/
+
+@media screen and (min-width:320px) and (max-width:768px) {
+
+
+  .cajaHeader {
+    position: unset;
+    height: 3%;
+   
+
+  }
+  .imagenHeader{
+    margin-left: 0;
+    
+  }
+  
+
+  .laConfe {
+    max-width: 100%;
+    height: 100vh;
+    background-size: cover;
+    /*para oscurecer la imagen de fondo utilizamos linear-gradient*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+      url("../assets/img/puentedelamujer.jpg");
+    border-top: 1px solid white;
+  
+  }
+
+  /*--------------------estilado de section lugay y fecha para celular------*/
+
+  .lugarYfecha {
+    height: 90vh;
+    position: relative;
+  }
+    .carousel-item img {
+      height: 90vh;
+      object-fit: cover;
+    }
+
+    .columnaIzquierda {
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+    }
+
+    .columnaDerecha {
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      background-color: transparent;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(90deg, rgba(83, 74, 74, 0.73) 0%, rgba(37, 35, 35, 0.52) 80%);
+      background: -webkit-linear-gradient(90deg, rgba(83, 74, 74, 0.73) 0%, rgba(37, 35, 35, 0.52) 80%);
+      background: -moz-linear-gradient(90deg, rgba(83, 74, 74, 0.73) 0%, rgba(37, 35, 35, 0.52) 80%);
+      font-size: 14px;
+    }
+
+   
+    .formulario1 {
+      margin-top: 1rem;
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      text-align: center;
+
+
+    }
+    
+    .navFooter ul {
+      text-align: center;
+      font-size:14px;
+    }
+
+  }
+
+  /*************************************************************************************/
+  /*---------------------EStilado para dispositivos tipo tablets----------------------*/
+  @media screen and (min-width : 769px)and (max-width :1199px) {
+
+
+    .cajaHeader {
+      width: 100%;
+      position: unset;
+      max-height: 8%;
+      
+
+    }
+
+    .imagenHeader{
+      margin-left: 0;
+      
+    }
+
+    .laConfe {
+      width: 100%;
+      height: 90vh;
+      background-size: cover;
+      /*para oscurecer la imagen de fondo utilizamos linear-gradient*/
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+        url("../assets/img/puentedelamujer.jpg");
+      
+
+    }
+  
+    /*-------------------Estilado Lugar y fecha para tablets----------*/
+    .lugarYfecha {
+      height: 90vh;
+      position: relative;
+    }
+
+    .carousel-item img {
+      height: 90vh;
+      object-fit: cover;
+    }
+
+    .columnaIzquierda {
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+    }
+
+    .columnaDerecha {
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      background-color: transparent;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+       background: linear-gradient(90deg, rgba(83, 74, 74, 0.73) 0%, rgba(37, 35, 35, 0.52) 80%);
+      background: -webkit-linear-gradient(90deg, rgba(83, 74, 74, 0.73) 0%, rgba(37, 35, 35, 0.52) 80%);
+      background: -moz-linear-gradient(90deg, rgba(83, 74, 74, 0.73) 0%, rgba(37, 35, 35, 0.52) 80%);
+      font-size: 16px;
+    }
+
+    /*------------------EStilado para formulario para tablet----------------------*/
+
+    .formulario1 {
+      margin-top: 1rem;
+      width: 70%;
+      height: auto;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      text-align: center;
+
+    }
+    .navFooter ul {
+     text-align: center;
+     font-size:14px;
+     
+    }
+
+  }
